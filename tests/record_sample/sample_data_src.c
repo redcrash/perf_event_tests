@@ -113,7 +113,7 @@ int main(int argc, char **argv) {
         pe.size=sizeof(struct perf_event_attr);
         pe.sample_period=SAMPLE_FREQUENCY;
         pe.sample_type=PERF_SAMPLE_IP | PERF_SAMPLE_WEIGHT |
-			PERF_SAMPLE_DATA_SRC;
+			PERF_SAMPLE_DATA_SRC | PERF_SAMPLE_ADDR;
 
 	global_sample_type=pe.sample_type;
 
