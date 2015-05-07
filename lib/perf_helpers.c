@@ -607,27 +607,27 @@ int get_latency_store_event(unsigned long long *config,
 		*config=0x2cd;
 		*config1=0x0;
 		*precise_ip=2;
-		strcpy(name,"MEM_TRANS_RETIRED:LATENCY_ABOVE_THRESHOLD");
+		strcpy(name,"MEM_TRANS_RETIRED:PRECISE_STORE");
 		break;
 	case PROCESSOR_IVYBRIDGE:
 	case PROCESSOR_IVYBRIDGE_EP:
 		*config=0x2cd;
 		*config1=0x0;
 		*precise_ip=2;
-		strcpy(name,"MEM_TRANS_RETIRED:LATENCY_ABOVE_THRESHOLD");
+		strcpy(name,"MEM_TRANS_RETIRED:PRECISE_STORE");
 		break;
 	case PROCESSOR_HASWELL:
 	case PROCESSOR_HASWELL_EP:
 		*config=0x2cd;
 		*config1=0x0;
 		*precise_ip=2;
-		strcpy(name,"MEM_TRANS_RETIRED:LATENCY_ABOVE_THRESHOLD");
+		strcpy(name,"MEM_TRANS_RETIRED:PRECISE_STORE");
 		break;
 	case PROCESSOR_BROADWELL:
 		*config=0x2cd;
 		*config1=0x0;
 		*precise_ip=2;
-		strcpy(name,"MEM_TRANS_RETIRED:LATENCY_ABOVE_THRESHOLD");
+		strcpy(name,"MEM_TRANS_RETIRED:PRECISE_STORE");
 		break;
 	default:
 		*config=0x0;
